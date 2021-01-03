@@ -1,0 +1,30 @@
+{% extends 'fscohort/base.html' %}
+{% block content%}
+
+{% block title %}
+Home Page
+{% endblock title%}
+<!-- <form action="." method="GET">
+      {{ my_form }}
+    </form>
+    <h1>This is Home Page</h1>
+    {{ title|title }} <br />
+    {{ title|safe }} <br />
+    {{ title|add:" is the best" }} <br />
+    {{ dict1 }} <br />
+    {{ my_list }} <br />
+    {%for i in my_list%} {% if i == 3 %}
+    <p>This number is equal to 3</p>
+    {% else %}
+    <p>{{ i }}</p>
+    {% endif %} {% endfor %} -->
+
+<h1>HOME PAGE</h1>
+<a href="{% url 'list' %}">
+  <button>See Student List</button>
+</a>
+<a href="{% url 'add' %}">
+  <button>Add Student</button>
+</a>
+
+{% endblock %}
